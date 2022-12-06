@@ -1,0 +1,43 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  height: 80px;
+  width: 230px;
+  background-color: rgb(207, 0, 66);
+  transform: skewX(-20deg);
+  box-shadow: 7px 6px 0px 0px rgb(0, 117, 39);
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn::selection {
+  background-color: transparent;
+}
+
+.btn:active {
+  transform: skewX(-20deg) scale(0.9);
+}
+
+.btn:hover {
+  width: 280px;
+  box-shadow: 10px 10px 0px 0px rgb(0, 226, 207);
+}

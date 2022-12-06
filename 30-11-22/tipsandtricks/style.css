@@ -1,0 +1,24 @@
+body {
+  height: 100vh;
+  background-color: #171d23;
+}
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  height: 10%;
+  width: 100%;
+  background-color: #171d23;
+}

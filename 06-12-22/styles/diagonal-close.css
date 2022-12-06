@@ -1,0 +1,34 @@
+.diagonal-close {
+  overflow: hidden;
+  border-color: brown;
+  color: brown;
+}
+
+.diagonal-close::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: brown;
+  z-index: -1;
+  position: absolute;
+  left: -10%;
+  transform: skew(30deg);
+  transition: all 0.5s;
+}
+
+.diagonal-close::after {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: brown;
+  z-index: -1;
+  position: absolute;
+  right: -10%;
+  transform: skew(30deg);
+  transition: all 0.5s;
+}
+
+.diagonal-close:hover::before,
+.diagonal-close:hover::after {
+  width: 61%;
+}

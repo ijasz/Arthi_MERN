@@ -1,0 +1,61 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.parent-box {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  transition: all 1s;
+}
+
+.parent-box:hover {
+  transform: rotate(360deg);
+}
+
+.child-box {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.box1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  translate: -50% -50%;
+  background-color: black;
+}
+
+.box2 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  translate: 50% -50%;
+  background-color: blueviolet;
+}
+
+.box3 {
+  position: absolute;
+  bottom: 0%;
+  translate: -50% 50%;
+  background-color: brown;
+}
+
+.box4 {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  translate: 50% 50%;
+  background-color: blue;
+}

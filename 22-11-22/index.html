@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* universal selector */
+
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* element selector */
+
+      section {
+        height: 100px;
+        background-color: brown;
+        margin: 10px;
+      }
+
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        margin: 10px;
+      }
+
+      /* id selector */
+
+      #box1 {
+        background-color: aquamarine;
+      }
+
+      /* class selector */
+
+      .box2 {
+        background-color: blueviolet;
+      }
+
+      /* element.class selector */
+
+      section.box2 {
+        background-color: blue;
+      }
+
+      /* element#id slector */
+
+      section#box1 {
+        background-color: red;
+      }
+
+      /* group selector(classes, id etc) */
+
+      h1,
+      h2,
+      h3 {
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1"></div>
+    <div class="box2"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <section id="box1"></section>
+    <section class="box2"></section>
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+  </body>
+</html>

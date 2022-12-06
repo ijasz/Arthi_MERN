@@ -1,0 +1,43 @@
+.zoning-in {
+  border-color: crimson;
+  color: crimson;
+  overflow: hidden;
+}
+
+.zoning-in::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-top: 0px solid crimson;
+  border-left: 0px solid crimson;
+  position: absolute;
+  left: -10%;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+  z-index: -1;
+  /* border: 2px solid red; */
+}
+
+.zoning-in::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-bottom: 0px solid crimson;
+  border-right: 0px solid crimson;
+  position: absolute;
+  right: -10%;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+  z-index: -1;
+  /* border: 2px solid red; */
+}
+
+.zoning-in:hover::before {
+  border-top: 100px solid crimson;
+  border-left: 100px solid crimson;
+}
+
+.zoning-in:hover::after {
+  border-bottom: 100px solid crimson;
+  border-right: 100px solid crimson;
+}

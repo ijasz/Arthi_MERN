@@ -1,0 +1,21 @@
+.diagonal {
+  overflow: hidden;
+  border-color: coral;
+  color: coral;
+}
+
+.diagonal::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: coral;
+  z-index: -1;
+  position: absolute;
+  left: -10%;
+  transform: skew(30deg);
+  transition: all 0.5s;
+}
+
+.diagonal:hover::before {
+  width: 120%;
+}

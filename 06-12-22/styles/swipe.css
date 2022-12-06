@@ -1,0 +1,19 @@
+.swipe {
+  border-color: green;
+  color: green;
+}
+
+.swipe::before {
+  content: "";
+  height: 100%;
+  width: 0%;
+  background-color: green;
+  z-index: -1;
+  position: absolute;
+  left: 0%;
+  transition: all 0.5s;
+}
+
+.swipe:hover::before {
+  width: 100%;
+}

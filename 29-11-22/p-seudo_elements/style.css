@@ -1,0 +1,55 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.parent-box {
+  height: 300px;
+  width: 300px;
+  background-color: aqua;
+  margin: auto;
+  /* padding: 20px; */
+  position: relative;
+  margin-top: 50px;
+}
+
+.box1::after,
+.box1::before,
+.box2::after,
+.box2::before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+
+.box1::before {
+  right: 0%;
+  background-color: rgb(0, 0, 0);
+  translate: 50% -50%;
+}
+
+.box1::after {
+  top: 0%;
+  background-color: rgb(149, 0, 0);
+  translate: -50% -50%;
+}
+
+.box2::before {
+  bottom: 0%;
+  left: 0%;
+  background-color: rgb(0, 0, 0);
+  translate: -50% 50%;
+}
+
+.box2::after {
+  bottom: 0%;
+  right: 0px;
+  background-color: rgb(149, 0, 0);
+  translate: 50% 50%;
+}
