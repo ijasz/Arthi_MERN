@@ -1,0 +1,124 @@
+@import url("./btns.css");
+@import url("./swipe.css");
+@import url("./diagonal.css");
+@import url("./double-swipe.css");
+@import url("./diagonal-close.css");
+@import url("./zoning-in.css");
+@import url("./slice.css");
+
+* {
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.topic {
+  text-align: center;
+}
+
+.m-3 {
+  margin: 30px;
+}
+
+.m-4 {
+  margin: 40px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collision {
+  border-color: navy;
+  color: navy;
+  overflow: hidden;
+}
+
+.collision::before {
+  content: "";
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  scale: 1;
+  translate: 0% -50%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: navy;
+}
+
+.collision:hover::before {
+  animation: Left-Collision 5s both;
+  animation-direction: alternate;
+  /* animation-play-state: paused; */
+  /* animation-iteration-count: infinite; */
+}
+
+.collision::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  translate: 0% -50%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: navy;
+}
+
+.collision:hover::after {
+  animation: Right-Collision 5s both;
+  animation-direction: alternate;
+  /* animation-play-state: paused; */
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes Left-Collision {
+  0% {
+    left: -20%;
+    translate: 0%;
+  }
+
+  50% {
+    left: 50%;
+    translate: -50%;
+  }
+
+  100% {
+    translate: -50%;
+    scale: 15;
+  }
+}
+
+@keyframes Right-Collision {
+  0% {
+    right: -20%;
+    translate: 0%;
+  }
+
+  50% {
+    right: 50%;
+    translate: 50%;
+  }
+
+  100% {
+    translate: 50%;
+    scale: 15;
+  }
+}

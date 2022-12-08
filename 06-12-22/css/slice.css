@@ -1,0 +1,39 @@
+.slice {
+  border-color: deeppink;
+  color: deeppink;
+  overflow: hidden;
+}
+
+.slice::before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  height: 150%;
+  width: 101%;
+  background-color: deeppink;
+  transform: skew(-70deg) translate(0%, 100%);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.slice::after {
+  content: "";
+  position: absolute;
+  right: -50%;
+  height: 150%;
+  width: 101%;
+  background-color: deeppink;
+  transform: skew(-70deg) translate(0%, -100%);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.slice:hover::before {
+  transform: skew(-70deg) translate(0%, 0%);
+}
+
+.slice:hover::after {
+  right: -50%;
+  transform: skew(-70deg) translate(0%, 0%);
+  background-color: deeppink;
+}
