@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  /* background-color: beige; */
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h6 {
+  margin-block: 1rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.overall_wrapper {
+  margin-block: 6rem;
+  gap: 10%;
+}
+
+.overall_wrapper > .details {
+  flex: 60%;
+  height: 600px;
+  /* background-color: aliceblue; */
+}
+
+.overall_wrapper > .orders {
+  flex: 40%;
+  height: 400px;
+  background-color: aqua;
+}
+
+.card {
+  padding: 1rem 2rem;
+  margin-block: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.card-row-wrapper {
+  max-width: 45rem;
+}
+
+.card .type {
+  /* margin: 10px; */
+  margin-top: 1rem;
+  margin-right: 3rem;
+  height: 30px;
+  width: 30px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.change-btn {
+  padding: 1rem;
+  padding-inline: 2rem;
+}
+
+.payment-method {
+  margin-block: 1rem;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.235);
+}
+
+.debit-credit-card {
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.debit-credit-card > .img {
+  margin-right: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.584);
+}
+
+.debit-credit-card > .type {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .overall_wrapper {
+    background-color: rgba(128, 128, 128, 0.398);
+    flex-direction: column;
+  }
+}
