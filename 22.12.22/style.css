@@ -1,0 +1,98 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+.snow {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  top: 20%;
+  background-color: #ac474b;
+}
+.body {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  left: 35%;
+  top: 20%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.body::after {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  left: -30%;
+  top: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.eye {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 40%;
+  top: 27%;
+  border-radius: 50%;
+  background-color: #0e1f2b;
+}
+.eye::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 50px;
+  top: 0px;
+  border-radius: 50%;
+  background-color: #0e1f2b;
+}
+.cap {
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  left: 38%;
+  top: 3%;
+  background-color: #0e1f2b;
+}
+.cap::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 110px;
+  left: -10px;
+  top: 90px;
+  background-color: #0e1f2b;
+}
+.cap::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 90px;
+  left: 0px;
+  top: 35px;
+  background-color: white;
+}
+.tie {
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  left: 28%;
+  top: 38%;
+  background-color: #ac474b;
+}
+.tie::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 120px;
+  left: 35px;
+  top: 10px;
+  border-radius: 50px;
+  background-color: #ffa63f;
+}

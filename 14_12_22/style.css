@@ -4,7 +4,7 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans- serif;
 }
 
 html {
@@ -78,7 +78,7 @@ h6 {
 .overall_wrapper > .orders {
   flex: 40%;
   height: 400px;
-  background-color: aqua;
+  background-color: rgba(128, 128, 128, 0.09);
 }
 
 .card {
