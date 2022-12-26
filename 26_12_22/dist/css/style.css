@@ -1,0 +1,25 @@
+.center, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0%;
+}
+body .outer-box {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+body .outer-box .inner-box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+}

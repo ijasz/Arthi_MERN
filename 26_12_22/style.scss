@@ -1,0 +1,33 @@
+// variables
+// global scope
+// local scope
+
+// $primary: green;
+
+// body {
+//   $secondary: red;
+//   background-color: $secondary;
+// }
+
+// .box {
+//   background-color: $primary;
+// }
+
+// Nested
+@import "./variables";
+@import "./classes";
+@import "./mixins";
+
+body {
+  min-height: 100vh;
+  margin: 0%;
+  @extend .center;
+
+  .outer-box {
+    @include box(200px, 200px, red);
+    @include flex(flex-end, flex-end, row, nowrap);
+    .inner-box {
+      @include box(100px, 100px, blue);
+    }
+  }
+}
