@@ -1,11 +1,11 @@
 // Function Declaration / Function Statement
-// function username(name = "") {
-//   return `Myself ${name}`;
-// }
+function username(name = "") {
+  return `Myself ${name}`;
+}
 
-// // console.log(username("arthi"));
-// // console.log(username("ashwathi"));
-// // console.log(username());
+// console.log(username("arthi"));
+// console.log(username("ashwathi"));
+// console.log(username());
 
 // let a = username("arthi");
 // let b = username("ashwathi");
@@ -15,25 +15,25 @@
 
 // Global Execution Context & Local Execution Context
 
-var a = 10;
+// var a = 10;
 
-function sum(a) {
-  var b = 20;
-  console.log(a + b);
-}
+// function sum(a) {
+//   var b = 20;
+//   console.log(a + b);
+// }
 
-sum(10);
+// sum(10);
 
-let count = 0;
+// let count = 0;
 
-function onPress(a) {
-  count++;
-  if (count === 1) {
-    a.style.color = "red";
-    a.innerHTML = "you clicked me";
-  } else if (count === 2) {
-    a.style.color = "blue";
-    a.innerHTML = "you clicked me";
-  }
-  console.log("you clicked me", a);
-}
+// function onPress(a) {
+//   count++;
+//   if (count === 1) {
+//     a.style.color = "red";
+//     a.innerHTML = "you clicked me";
+//   } else if (count === 2) {
+//     a.style.color = "blue";
+//     a.innerHTML = "you clicked me";
+//   }
+//   console.log("you clicked me", a);
+// }

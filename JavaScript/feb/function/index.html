@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body {
+        cursor: none;
+        height: 100vh;
+        background-color: black;
+        overflow: hidden;
+      }
+
+      h1 {
+        cursor: none;
+        font-size: 10px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 2px solid greenyellow;
+        position: absolute;
+        translate: -50% -50%;
+        font-family: cursive;
+        color: greenyellow;
+      }
+
+      h1::selection {
+        background-color: transparent;
+      }
+
+      h1:active {
+        scale: 1.5;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body class="center" onmousemove="tracking(event)">
+    <h1 class="center">Click</h1>
+    <script src="index.js"></script>
+  </body>
+</html>
