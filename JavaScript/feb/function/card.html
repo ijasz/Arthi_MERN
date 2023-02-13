@@ -16,7 +16,21 @@
       }
 
       body {
-        height: 100vh;
+        min-height: 100vh;
+      }
+
+      .card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-block: 50px;
+      }
+
+      .card {
+        padding: 10px;
+        max-width: 300px;
+        background-color: aqua;
+        box-shadow: 2px 2px solid rgba(0, 0, 0, 0.164);
       }
 
       .alert-bg-layer {
@@ -56,7 +70,7 @@
       }
 
       .add-button {
-        float: right;
+        margin-left: auto;
         background-color: antiquewhite;
       }
 
@@ -73,10 +87,12 @@
         <label for="">Username</label>
         <input type="text" class="username" />
         <label for="">Password</label>
-        <input type="password" class="password" />
+        <input type="desc" class="desc" />
         <button class="submit" onclick="onSubmit()">Submit</button>
       </form>
     </main>
+
+    <main class="card-wrapper"></main>
     <script>
       function add() {
         const alert = document.querySelector(".alert-bg-layer");
@@ -90,10 +106,21 @@
 
       function onSubmit() {
         const username = document.querySelector(".username");
-        const password = document.querySelector(".password");
+        const desc = document.querySelector(".desc");
+        const card = document.createElement("main");
+        const nameElement = document.createElement("p");
+        const descElement = document.createElement("p");
+
+        nameElement.innerHTML = username.value;
+        descElement.innerHTML = desc.value;
+        card.className = "card";
+
+        card.append(nameElement, descElement);
+        document.querySelector(".card-wrapper").appendChild(card);
 
         console.log("username", username.value);
-        console.log("password", password.value);
+        console.log("desc", desc.value);
+        closeAlert();
       }
     </script>
   </body>
