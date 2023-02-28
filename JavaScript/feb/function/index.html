@@ -14,41 +14,48 @@
       .center {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;+
       }
 
       body {
         cursor: none;
         height: 100vh;
         background-color: black;
-        overflow: hidden;
       }
 
-      h1 {
+      button {
         cursor: none;
-        font-size: 10px;
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        border: 2px solid greenyellow;
         position: absolute;
         translate: -50% -50%;
-        font-family: cursive;
-        color: greenyellow;
-      }
-
-      h1::selection {
+        height: 50px;
+        width: 50px;
+        border-color: aqua;
         background-color: transparent;
+        border-radius: 50%;
+        transition: background-color 0.5s;
       }
 
-      h1:active {
-        scale: 1.5;
-        color: transparent;
+      button:active {
+        scale: 1.1;
+        background-color: aqua;
+      }
+
+      /* button:active + img {
+        display: inline;
+      } */
+
+      img {
+        display: none;
+        height: 100px;
+        max-width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
       }
     </style>
   </head>
   <body class="center" onmousemove="tracking(event)">
-    <h1 class="center">Click</h1>
+    <img src="https://25.media.tumblr.com/tumblr_m6e5iivxPR1qjee29o1_500.gif" />
+    <button onclick="btnClick(this)"></button>
     <script src="index.js"></script>
   </body>
 </html>
