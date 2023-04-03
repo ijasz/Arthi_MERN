@@ -1,0 +1,36 @@
+@import "./variable";
+@import "./classes";
+@import "./mixin";
+$third: brown;
+body {
+  height: 100vh;
+}
+.box {
+  $third: red;
+  background-color: $third;
+  font-size: 2rem;
+  // @extend .center;
+  @include flex(center, center, row, wrap);
+  gap: 10%;
+
+  .box1 {
+    // background-color: orange;
+    // height: 200px;
+    // width: 200px;
+    position: absolute;
+    top: 50%;
+    @include hwb(200px, 200px, pink);
+    margin: 20px;
+    p {
+      color: white;
+      background-color: green;
+      // @include hwb(500px, 500px, rgb(255, 0, 93));
+    }
+    // p:nth-of-type(1) {
+    //   background-color: aqua;
+    // }
+  }
+}
+.box2 {
+  background-color: $third;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const userId = "arth";
+      const password = "12345";
+      // window.localStorage.setItem("name", "arthi")
+      if (userId === "arthi" && password === "12345") {
+        window.localStorage.setItem("name", userId);
+      }
+      
+      if (localStorage.getItem("name")) {
+        console.log("login successfully");
+      } else {
+        console.log("not logged in");
+      }
+      // window.localStorage.clear("name")
+    </script>
+  </body>
+</html>

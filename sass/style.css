@@ -1,0 +1,36 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.box {
+  background-color: red;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.box .box1 {
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  background-color: pink;
+  width: 200px;
+  margin: 20px;
+}
+.box .box1 p {
+  color: white;
+  background-color: green;
+}
+
+.box2 {
+  background-color: brown;
+}/*# sourceMappingURL=style.css.map */
